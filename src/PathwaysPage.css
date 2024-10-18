@@ -1,0 +1,21 @@
+/* PathwaysPage.css */
+.pathways-page {
+    padding: 50px;
+    text-align: center;
+    background-color: #e8f6f3;
+    min-height: 100vh;
+  }
+  
+  .pathways-page h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .pathways-page p {
+    font-size: 1.2rem;
+    color: #34495e;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  

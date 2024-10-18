@@ -1,0 +1,77 @@
+/* ExplorePage.css */
+.explore-page {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.explore-page h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+  
+.explore-page p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+  
+.department-select {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+}
+  
+.department-select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: solid gray;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+}
+  
+.show-colleges-btn, .find-pathways-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    text-decoration: none !important; /* Force no underline */
+}
+
+/* Specifically target <a> elements styled as buttons */
+a.show-colleges-btn, a.find-pathways-btn {
+    text-decoration: none !important; /* Forcefully remove underline */
+    color: white !important; /* Ensure color stays white */
+}
+
+.show-colleges-btn:hover, .find-pathways-btn:hover {
+    background-color: #218838;
+}
+
+/* Ensure focus outline is removed */
+button:focus, .department-select:focus, .show-colleges-btn:focus, .find-pathways-btn:focus {
+    outline: none;
+}
